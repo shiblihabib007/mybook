@@ -64,42 +64,16 @@ class OrderController extends Controller
     public function add($bookId)
     {
         
-      
        $data=Product::where('book_id', $bookId)->get();
-
         foreach ($data as $datas) {
-            
-       
-
         $cart_data=Cart::add($datas->book_id, $datas->book_name,1,  $datas->book_price);
-
-        
          return redirect('/home');
         }
-
-
-        
-        
     }
+
 
    
  
-
-    
-    /*
-
-    public function login_checout()
-    {
-            if (Auth::guest()) {
-               return Redirect::guest('login');
-        }else{
-            return redirect('/cart_checkout_form');
-        }
-    }
-
-    */
-
-    
 
 
     public function checkout(Request $request)
@@ -175,11 +149,11 @@ class OrderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $rowId )
+    public function cart_update(Request $request, $rowId )
     {
         $quantity  = $request->input('product_quantyty');
         Cart::update($rowId, $quantity);
-        return redirect('/cart');
+        return redirect('/cart_view_and_edit');
     }
 
     /**
@@ -188,11 +162,7 @@ class OrderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function delete($rowId)
-    {
-        Cart::remove($rowId);
-        return redirect('/cart');
-    }
+    
     public function destroy()
     {
         Cart::destroy();

@@ -20,9 +20,13 @@ Route::get('/test', 'FrontViewController@test')->name('test');
 
 
 
+Route::get('/shop_now', 'ShopController@shop_now')->name('shop_now');
+
+
+
 
 Route::get('/cart_add/{bookId}', 'OrderController@add')->name('cart_add');
-Route::post('/cart_update/{rowId}', 'OrderController@update')->name('cart_update');
+Route::post('/cart_update/{rowId}', 'OrderController@cart_update')->name('cart_update');
 Route::get('/cart_item_delete/{rowId}', 'OrderController@cart_item_delete')->name('cart_item_delete');
 //Route::get('/cart_checkout', 'OrderController@checkout')->name('cart_checkout');
 Route::get('/cart_destroy', 'OrderController@destroy')->name('cart_destroy');
@@ -36,6 +40,30 @@ Route::post('/checkout', 'OrderController@checkout')->name('checkout');
 
 
 Route::post('/login_checout', 'OrderController@login_checout')->name('login_checout');
+
+
+
+
+
+
+
+
+Route::get('/contact', 'ContactController@contact')->name('contact');
+Route::get('/team', 'TeamController@team')->name('team');
+
+
+
+Route::get('/about', 'AboutController@about')->name('about');
+
+
+
+
+
+
+
+
+
+
 
 
 Auth::routes();

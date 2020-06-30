@@ -1,5 +1,5 @@
 @extends('frontViewLayouts.master')
-@section('slide')
+@section('main')
     <!-- Start Bradcaump area -->
         <div class="ht__bradcaump__area bg-image--4">
             <div class="container">
@@ -18,9 +18,7 @@
             </div>
         </div>
         <!-- End Bradcaump area -->
-@endsection
 
-@section('cart_form')
 <!-- Start Checkout Area -->
 <section class="wn__checkout__area section-padding--lg bg__white">
     <div class="container">

@@ -1,5 +1,5 @@
 @extends('frontViewLayouts.master')
-@section('slide')
+@section('main')
 <!-- Start Slider area -->
         <div class="slider-area brown__nav slider--15 slide__activation slide__arrow01 owl-carousel owl-theme">
         	<!-- Start Single Slide -->
@@ -40,9 +40,7 @@
             <!-- End Single Slide -->
         </div>
         <!-- End Slider area -->
-@endsection
 
-@section('new_product')
 
 
 
@@ -112,8 +110,7 @@
 			</div>
 		</section>
 		<!-- Start BEst Seller Area -->
-@endsection
-@section('subcribe')
+
 	
 		<!-- Start NEwsletter Area -->
 		<section class="wn__newsletter__area bg-image--2">
@@ -137,9 +134,7 @@
 			</div>
 		</section>
 		<!-- End NEwsletter Area -->
-@endsection
 
-@section('all_product')
 <!-- Start Best Seller Area -->
 		<section class="wn__bestseller__area bg--white pt--80  pb--30">
 			<div class="container">
@@ -569,11 +564,14 @@
 						</div>
 					</div>
 					<!-- End Single Tab Content -->
+
+
+
 					<!-- Start Single Tab Content -->
 					<div class="row single__tab tab-pane fade" id="nav-biographic" role="tabpanel">
 						<div class="product__indicator--4 arrows_style owl-carousel owl-theme">
+							<!-- Start Single Product -->
 							<div class="single__product">
-								<!-- Start Single Product -->
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 									<div class="product product__style--3">
 										<div class="product__thumb">
@@ -650,8 +648,10 @@
 										</div>
 									</div>
 								</div>
-								<!-- Start Single Product -->
 							</div>
+							<!-- Start Single Product -->
+
+
 							<div class="single__product">
 								<!-- Start Single Product -->
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -975,6 +975,9 @@
 						</div>
 					</div>
 					<!-- End Single Tab Content -->
+
+
+
 					<!-- Start Single Tab Content -->
 					<div class="row single__tab tab-pane fade" id="nav-adventure" role="tabpanel">
 						<div class="product__indicator--4 arrows_style owl-carousel owl-theme">
@@ -2197,82 +2200,7 @@
 			</div>
 		</section>
 		<!-- Start BEst Seller Area -->
-@endsection
 
-
-@section('blog')
-<!-- Start Recent Post Area -->
-		<section class="wn__recent__post bg--gray ptb--80">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section__title text-center">
-							<h2 class="title__be--2">Our <span class="color--theme">Blog</span></h2>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form</p>
-						</div>
-					</div>
-				</div>
-				<div class="row mt--50">
-					<div class="col-md-6 col-lg-4 col-sm-12">
-						<div class="post__itam">
-							<div class="content">
-								<h3><a href="blog-details.html">International activities of the Frankfurt Book </a></h3>
-								<p>We are proud to announce the very first the edition of the frankfurt news.We are proud to announce the very first of  edition of the fault frankfurt news for us.</p>
-								<div class="post__time">
-									<span class="day">Dec 06, 18</span>
-									<div class="post-meta">
-										<ul>
-											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
-											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-sm-12">
-						<div class="post__itam">
-							<div class="content">
-								<h3><a href="blog-details.html">Reading has a signficant info  number of benefits</a></h3>
-								<p>Find all the information you need to ensure your experience.Find all the information you need to ensure your experience . Find all the information you of.</p>
-								<div class="post__time">
-									<span class="day">Mar 08, 18</span>
-									<div class="post-meta">
-										<ul>
-											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
-											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 col-sm-12">
-						<div class="post__itam">
-							<div class="content">
-								<h3><a href="blog-details.html">The London Book Fair is to be packed with exciting </a></h3>
-								<p>The London Book Fair is the global area inon marketplace for rights negotiation.The year  London Book Fair is the global area inon forg marketplace for rights.</p>
-								<div class="post__time">
-									<span class="day">Nov 11, 18</span>
-									<div class="post-meta">
-										<ul>
-											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
-											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Recent Post Area -->
-@endsection
-
-
-
-@section('best_seller')
 	<!-- Best Sale Area -->
 		<section class="best-seel-area pt--80 pb--60">
 			<div class="container">
@@ -2513,4 +2441,72 @@
 			</div>
 		</section>
 		<!-- Best Sale Area Area -->
+
+<!-- Start Recent Post Area -->
+		<section class="wn__recent__post bg--gray ptb--80">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section__title text-center">
+							<h2 class="title__be--2">Our <span class="color--theme">Blog</span></h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form</p>
+						</div>
+					</div>
+				</div>
+				<div class="row mt--50">
+					<div class="col-md-6 col-lg-4 col-sm-12">
+						<div class="post__itam">
+							<div class="content">
+								<h3><a href="blog-details.html">International activities of the Frankfurt Book </a></h3>
+								<p>We are proud to announce the very first the edition of the frankfurt news.We are proud to announce the very first of  edition of the fault frankfurt news for us.</p>
+								<div class="post__time">
+									<span class="day">Dec 06, 18</span>
+									<div class="post-meta">
+										<ul>
+											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
+											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 col-sm-12">
+						<div class="post__itam">
+							<div class="content">
+								<h3><a href="blog-details.html">Reading has a signficant info  number of benefits</a></h3>
+								<p>Find all the information you need to ensure your experience.Find all the information you need to ensure your experience . Find all the information you of.</p>
+								<div class="post__time">
+									<span class="day">Mar 08, 18</span>
+									<div class="post-meta">
+										<ul>
+											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
+											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 col-sm-12">
+						<div class="post__itam">
+							<div class="content">
+								<h3><a href="blog-details.html">The London Book Fair is to be packed with exciting </a></h3>
+								<p>The London Book Fair is the global area inon marketplace for rights negotiation.The year  London Book Fair is the global area inon forg marketplace for rights.</p>
+								<div class="post__time">
+									<span class="day">Nov 11, 18</span>
+									<div class="post-meta">
+										<ul>
+											<li><a href="#"><i class="bi bi-love"></i>72</a></li>
+											<li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Recent Post Area -->
 @endsection
